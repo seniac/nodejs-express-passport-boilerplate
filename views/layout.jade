@@ -1,0 +1,25 @@
+doctype html
+html
+	head
+		title= title
+		link(rel='stylesheet', href='/css/bootstrap.min.css')
+		link(rel='stylesheet', href='/css/style.css')
+	body
+		.wrapper
+			header
+				h1 Header
+			#top-navigation
+				ul
+					li
+						a(href='/') Hauptseite
+					li
+						a(href='/user/login') Anmelden
+					li
+						a(href='/user/register') Registrieren
+					li
+						a(href='/disclaimer') Impressum
+			.clear
+			block navigation
+			.clear
+			block content
+		script(scr='/js/jquery.min.js')

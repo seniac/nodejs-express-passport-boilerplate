@@ -1,0 +1,27 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+ul li {
+  padding: 0px;
+  margin: 0px;
+}
+a {
+  color: #00b7ff;
+}
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+#top-navigation li {
+  float: left;
+  margin-right: 10px;
+}
+.clear {
+  clear: both;
+}

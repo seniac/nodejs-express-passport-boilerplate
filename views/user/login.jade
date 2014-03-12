@@ -1,0 +1,21 @@
+extends ../layout
+
+block content
+	h1 Login
+
+	if message
+		each m in message
+			div.alert.alert-danger #{m}
+
+	form(action='/user/login', method='POST').form-horizontal
+		div.form-group
+			label(for='inputEmail').col-sm-2.control-label Email
+			div.col-sm-10
+				input(type='email', name='email', placeholder='max@musterman.de').form-control
+		div.form-group
+			label(for='inputPassword').col-sm-2.control-label Password
+			div.col-sm-10
+				input(type='password', name='password', placeholder='Password').form-control
+		div.form-group
+			div.col-sm-offset-2.col-sm-10
+				button(type='submit').btn.btn-default Login
